@@ -26,7 +26,7 @@ export LD_LIBRARY_PATH="${CUDA_PATH}/extras/CUPTI/lib64:${LD_LIBRARY_PATH}"
 export NVCC="${CUDA_PATH}/bin/nvcc"
 export CFLAGS="-I${CUDA_PATH}/include ${CFLAGS}"
 
-# Add to crontab (crontab -e) as root
+# Add to crontab as root (sudo crontab -e)
 @reboot  /usr/bin/nvidia-smi -i 0 -pl 200 # GPU 0
 @reboot  /usr/bin/nvidia-smi -i 1 -pl 200 # GPU 1
 4 * * * *   /usr/bin/nvidia-smi -i 0 -pl 200 # GPU 0
