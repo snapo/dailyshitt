@@ -1,6 +1,9 @@
 ollama_listen_all_interface
 
 Edit the service file: Open /etc/systemd/system/ollama.service and add the following line inside the [Service] section:
+
+#add after the Environment line this line to allow all hosts from 0.0.0.0 to 255.255.255.255
 Environment="OLLAMA_HOST=0.0.0.0"
+OLLAMA_KEEP_ALIVE=480
 sudo systemctl daemon-reload
 sudo systemctl restart ollama
