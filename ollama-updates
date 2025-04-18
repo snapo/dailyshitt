@@ -12,3 +12,13 @@ sudo systemctl restart ollama
 
 single line command to do it:
 sudo sed -i '/Environment="PATH=/a Environment="OLLAMA_HOST=0.0.0.0"\nEnvironment="OLLAMA_KEEP_ALIVE=4800"' /etc/systemd/system/ollama.service && sudo systemctl daemon-reload && sudo systemctl restart ollama
+
+
+
+
+
+also change the pubkey, so we can download from stupid huggingface repos that require authentication
+cat /usr/share/ollama/.ollama/id_ed25519.pub (check if key is already in there) else
+
+cat ~/.ssh/id_ed25519.pub | sudo tee -a /usr/share/ollama/.ollama/id_ed25519.pub > /dev/null
+
