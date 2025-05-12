@@ -34,3 +34,10 @@ export CFLAGS="-I${CUDA_PATH}/include ${CFLAGS}"
 
 
 
+
+
+###############################
+Desktop
+sudo apt-get install nvidia-driver-550 nvidia-compute-utils-550 libnvidia-compute-550 nvidia-cuda-toolkit nvidia-cuda-dev cuda-drivers-fabricmanager-550 
+
+
