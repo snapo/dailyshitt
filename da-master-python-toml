@@ -1,0 +1,37 @@
+[project]
+name = "snapnet"
+version = "0.1.0"
+description = "uv sync to install python dependencies with CUDA 12.8 support"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "graphviz>=0.21",
+    "kernels>=0.12.3",
+    "matplotlib>=3.10.8",
+    "numpy[cu128]>=2.0.0",
+    "pandas>=3.0.2",
+    "pyarrow>=23.0.1",
+    "requests>=2.32.5",
+    "rustbpe>=0.1.0",
+    "scikit-learn>=1.8.0",
+    "sentencepiece[cu128]>=0.2.1",
+    "tcl>=0.2",
+    "tiktoken>=0.12.0",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "torchviz>=0.0.3",
+    "tqdm>=4.67.3",
+    "zstandard[cu128]>=0.23.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.extra-build-dependencies]
+flash-attn = ["torch", "ninja", "packaging"]
