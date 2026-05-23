@@ -1,0 +1,1 @@
+sudo apt install nvidia-utils-575 nvidia-headless-no-dkms-575 nvidia-container-toolkit nvidia-docker2 nvidia-headless-575
