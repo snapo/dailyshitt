@@ -1,1 +1,6 @@
-sudo apt install nvidia-utils-575 nvidia-headless-no-dkms-575 nvidia-container-toolkit nvidia-docker2 nvidia-headless-575
+sudo apt remove nvidia-utils-580 nvidia-headless-no-dkms-580 nvidia-container-toolkit nvidia-docker2 nvidia-headless-580 nvidia-utils-580 nvidia-compute-utils-580 libnvidia-common-580 libnvidia-compute-580
+
+
+reboot
+
+sudo apt install nvidia-utils-570 nvidia-headless-no-dkms-570 nvidia-container-toolkit nvidia-docker2 nvidia-headless-570 nvidia-utils-570 nvidia-compute-utils-570 libnvidia-common-570 libnvidia-compute-570
