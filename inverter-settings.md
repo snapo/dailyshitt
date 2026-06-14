@@ -23,7 +23,7 @@
 | Max A Discharge | 150 A |
 | Batt Shutdown % | 10 % |
 | Batt Low % | 30 % |
-| Batt Restart % | 50 % |
+| Batt Restart % | 35 % |
 | Activate Battery | Enable |
 | Disable float charge | Enable |
 
