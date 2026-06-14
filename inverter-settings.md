@@ -10,7 +10,7 @@
 | Equalization V | 48.2 V |
 | Equalization Cycle | 90 D |
 | Equalization Operating Time | 0 h/2 |
-| Batt Empty V | 48.2 V |
+| Batt Empty V | 46.0 V |
 | Batt Resistance | 3 mΩ |
 | Batt Charge Efficiency | 99 % |
 | TEMPCO | 0 -mV/°C/Cell |
