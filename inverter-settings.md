@@ -19,8 +19,8 @@
 
 | Parameter | Value |
 |-----------|-------|
-| Max A Charge | 80 A |
-| Max A Discharge | 150 A |
+| Max A Charge | 90 A |
+| Max A Discharge | 160 A |
 | Batt Shutdown % | 10 % |
 | Batt Low % | 30 % |
 | Batt Restart % | 35 % |
