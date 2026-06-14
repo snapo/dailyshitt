@@ -6,7 +6,7 @@
 | Batt-% Mode | active |
 | Battery Capacity | 504 Ah |
 | Float V | 52.4 V |
-| Absorption V | 57.2 V |
+| Absorption V | 57.1 V |
 | Equalization V | 48.2 V |
 | Equalization Cycle | 90 D |
 | Equalization Operating Time | 0 h/2 |
@@ -19,7 +19,7 @@
 
 | Parameter | Value |
 |-----------|-------|
-| Max A Charge | 110 A |
+| Max A Charge | 90 A |
 | Max A Discharge | 150 A |
 | Batt Shutdown % | 10 % |
 | Batt Low % | 30 % |
