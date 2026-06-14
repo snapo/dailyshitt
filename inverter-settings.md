@@ -3,7 +3,7 @@
 | Parameter | Value |
 |-----------|-------|
 | Batt Type | (not specified) |
-| Batt-% Mode | (not specified) |
+| Batt-% Mode | active |
 | Battery Capacity | 504 Ah |
 | Float V | 52.4 V |
 | Absorption V | 57.2 V |
@@ -61,10 +61,6 @@
 | Time 6 | — | — | 21:00 | 01:00 | 10000 | 34 |
 
 > Note: Grid Charge and Gen columns have no values set (indicated by —).
-
-## Grid Setting
-
-This section is password protected. No configuration data available.
 
 ## SmartLoad Setup
 
