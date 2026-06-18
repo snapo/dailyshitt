@@ -1,33 +1,39 @@
-## Battery Basic Parameters (Battery Setting-1)
+# Inverter Configuration Settings
+
+## Battery Setting-1
 
 | Parameter | Value |
 |-----------|-------|
-| Batt Type | (not specified) |
-| Batt-% Mode | active |
-| Battery Capacity | 504 Ah |
+| Batt Type | - |
+| Batt-% Mode | - |
+| Battery Capacity | 660 Ah |
 | Float V | 52.4 V |
-| Absorption V | 57.1 V |
+| Absorption V | 57.3 V |
 | Equalization V | 48.2 V |
 | Equalization Cycle | 90 D |
 | Equalization Operating Time | 0 h/2 |
-| Batt Empty V | 46.0 V |
+| Batt Empty V | 46.5 V |
 | Batt Resistance | 3 mΩ |
 | Batt Charge Efficiency | 99 % |
-| TEMPCO | 0 -mV/°C/Cell |
+| TEMPCO | 0 -mV/℃/Cell |
 
-## Battery Charge / Discharge Limits (Battery Setting-2)
+---
+
+## Battery Setting-2
 
 | Parameter | Value |
 |-----------|-------|
-| Max A Charge | 90 A |
-| Max A Discharge | 160 A |
-| Batt Shutdown % | 10 % |
+| Max A Charge | 120 A |
+| Max A Discharge | 200 A |
+| Batt Shutdown % | 25 % |
 | Batt Low % | 30 % |
 | Batt Restart % | 35 % |
 | Activate Battery | Enable |
 | Disable float charge | Enable |
 
-## Battery Charging Sources (Battery Setting-3)
+---
+
+## Battery Setting-3
 
 | Parameter | Value |
 |-----------|-------|
@@ -37,7 +43,9 @@
 | Gen Signal | Disable |
 | Gen Force | Disable |
 
-## System Work Mode – Basic (System Work Mode-1)
+---
+
+## System Work Mode-1
 
 | Parameter | Value |
 |-----------|-------|
@@ -49,29 +57,39 @@
 | Energy Pattern | Load First |
 | Zero export power | 0 W |
 
-## System Work Mode – Time of Use (System Work Mode-2)
+---
 
-| Time Slot | Grid Charge | Gen | Start Time | End Time | Power (W) | Batt (%) |
-|-----------|-------------|-----|------------|----------|-----------|----------|
-| Time 1 | — | — | 01:00 | 05:00 | 10000 | 34 |
-| Time 2 | — | — | 05:00 | 09:00 | 10000 | 34 |
-| Time 3 | — | — | 09:00 | 13:00 | 10000 | 34 |
-| Time 4 | — | — | 13:00 | 17:00 | 10000 | 34 |
-| Time 5 | — | — | 17:00 | 21:00 | 10000 | 34 |
-| Time 6 | — | — | 21:00 | 01:00 | 10000 | 34 |
+## System Work Mode-2 (Time of Use)
 
-> Note: Grid Charge and Gen columns have no values set (indicated by —).
+| Time Slot | Grid Charge | Gen | Start Time | End Time | Power | Batt % |
+|-----------|-------------|-----|------------|----------|-------|--------|
+| Time 1 | - | - | 1:00 | 5:00 | 10000 W | 34 % |
+| Time 2 | - | - | 5:00 | 9:00 | 10000 W | 34 % |
+| Time 3 | - | - | 9:00 | 13:00 | 10000 W | 34 % |
+| Time 4 | - | - | 13:00 | 17:00 | 10000 W | 34 % |
+| Time 5 | - | - | 17:00 | 21:00 | 10000 W | 34 % |
+| Time 6 | - | - | 21:00 | 1:00 | 10000 W | 34 % |
+
+---
+
+## Grid Setting
+
+| Parameter | Value |
+|-----------|-------|
+| Status | 🔒 Locked - Password Required |
+
+---
 
 ## SmartLoad Setup
 
 | Parameter | Value |
 |-----------|-------|
-| SmartLoad Setup | SmartLoad Output |
-| OFF % | 95 % |
-| ON % | 100 % |
-| On Grid always on | Disable |
-| Solar Power | 5000 W |
-| Off Grid Immediately Off | Disable |
+| SmartLoad Setup | Generator Input |
+| On Grid Side | Disable |
+| On Load Side | Disable |
+| GEN connect to Grid input | Disable |
+
+---
 
 ## Basic Setting
 
@@ -79,11 +97,13 @@
 |-----------|-------|
 | AM/PM | Disable |
 | Auto Dim | Enable |
-| System Time | 2026/06/14 06:38:14 |
+| System Time | 2026/06/18 16:27:15 |
 | Factory Reset | Disable |
 | Time Syncs | Enable |
 | BEEP | Enable |
 | Lock Out All Changes | Disable |
+
+---
 
 ## Meter Settings
 
@@ -93,7 +113,9 @@
 | Meter Select | No Meter |
 | Grid Tie Meter2 | Disable |
 
-## Advanced Function – Part 1 (Advanced Function-1)
+---
+
+## Advanced Function-1
 
 | Parameter | Value |
 |-----------|-------|
@@ -119,7 +141,9 @@
 | PV3_Check_Enable | Disable |
 | AC_Output_Power_Limit | 10000 W |
 
-## Advanced Function – Part 2 (Advanced Function-2)
+---
+
+## Advanced Function-2
 
 | Parameter | Value |
 |-----------|-------|
@@ -127,7 +151,9 @@
 | DC2 for WindTurbine | Disable |
 | DC3 for WindTurbine | Disable |
 
-## EV Charge Mode
+---
+
+## EV_Charge_Mode
 
 | Parameter | Value |
 |-----------|-------|
@@ -135,3 +161,5 @@
 | Charging Settings | Disable |
 | EV_charge Device Connect Set | Disable |
 | Max Charge Power | 3000 W |
+
+---
