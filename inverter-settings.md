@@ -1,42 +1,42 @@
-# Inverter Configuration Settings
+# Battery & System Settings - Data Tables
 
-## Battery Setting-1
-
-| Parameter | Value |
-|-----------|-------|
+## Table 1: Battery Settings (Battery Setting-1)
+| **Parameter** | **Value** |
+|---|---|
+| Set Date/Time | 2026-07-12 05:01:09 UTC+07:00 |
 | Batt Type | - |
-| Batt-% Mode | - |
-| Battery Capacity | 660 Ah |
-| Float V | 52.4 V |
-| Absorption V | 57.3 V |
-| Equalization V | 48.2 V |
-| Equalization Cycle | 90 D |
+| Batt-V Mode | - |
+| Battery Capacity | 690 Ah |
+| Float V | 54.1 V |
+| Absorption V | 57.2 V |
+| Equalization V | 58 V |
+| Equalization Cycle | 0 D |
 | Equalization Operating Time | 0 h/2 |
-| Batt Empty V | 46.5 V |
+| Batt Empty V | 47.9 V |
 | Batt Resistance | 3 mΩ |
 | Batt Charge Efficiency | 99 % |
 | TEMPCO | 0 -mV/℃/Cell |
 
 ---
 
-## Battery Setting-2
-
-| Parameter | Value |
-|-----------|-------|
-| Max A Charge | 120 A |
-| Max A Discharge | 200 A |
-| Batt Shutdown % | 25 % |
-| Batt Low % | 30 % |
-| Batt Restart % | 35 % |
+## Table 2: Battery Settings (Battery Setting-2)
+| **Parameter** | **Value** |
+|---|---|
+| Set Date/Time | 2026-07-12 05:01:36 UTC+07:00 |
+| Max A Charge | 90 A |
+| Max A Discharge | 150 A |
+| Batt Shutdown V | 47.8 V |
+| Batt Low V | 48 V |
+| Batt Restart V | 48.1 V |
 | Activate Battery | Enable |
 | Disable float charge | Enable |
 
 ---
 
-## Battery Setting-3
-
-| Parameter | Value |
-|-----------|-------|
+## Table 3: Battery Settings (Battery Setting-3)
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | Grid Charge | Disable |
 | Gen Charge | Disable |
 | Grid Signal | Disable |
@@ -45,45 +45,37 @@
 
 ---
 
-## System Work Mode-1
-
-| Parameter | Value |
-|-----------|-------|
+## Table 4: System Work Mode (System Work Mode-1)
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | System Work Mode | Zero Export to CT |
 | Solar Sell | Disable |
-| Setup | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday |
-| Max Sell Power | 3000 W |
-| Max Solar Power | 15000 W |
+| Setup Days | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday |
+| Max Sell Power | 500 W |
+| Max Solar Power | 10000 W |
 | Energy Pattern | Load First |
 | Zero export power | 0 W |
 
 ---
 
-## System Work Mode-2 (Time of Use)
-
-| Time Slot | Grid Charge | Gen | Start Time | End Time | Power | Batt % |
-|-----------|-------------|-----|------------|----------|-------|--------|
-| Time 1 | - | - | 1:00 | 5:00 | 10000 W | 34 % |
-| Time 2 | - | - | 5:00 | 9:00 | 10000 W | 34 % |
-| Time 3 | - | - | 9:00 | 13:00 | 10000 W | 34 % |
-| Time 4 | - | - | 13:00 | 17:00 | 10000 W | 34 % |
-| Time 5 | - | - | 17:00 | 21:00 | 10000 W | 34 % |
-| Time 6 | - | - | 21:00 | 1:00 | 10000 W | 34 % |
-
----
-
-## Grid Setting
-
-| Parameter | Value |
-|-----------|-------|
-| Status | 🔒 Locked - Password Required |
+## Table 5: Time of Use Schedule (System Work Mode-2)
+| **Time Slot** | **Grid Charge** | **Gen** | **Start Time** | **End Time** | **Power** | **Batt** |
+|---|---|---|---|---|---|---|
+| **Set Date/Time:** 2026-07-12 05:03:23 UTC+07:00 |
+| Time 1 | 1 h | 0 m | 5 h | 0 m | 10000 W | 48.2 V |
+| Time 2 | 5 h | 0 m | 9 h | 0 m | 10000 W | 48.2 V |
+| Time 3 | 9 h | 0 m | 13 h | 0 m | 10000 W | 48.2 V |
+| Time 4 | 13 h | 0 m | 17 h | 0 m | 10000 W | 48.2 V |
+| Time 5 | 17 h | 0 m | 21 h | 0 m | 10000 W | 48.2 V |
+| Time 6 | 21 h | 0 m | 1 h | 0 m | 10000 W | 48.2 V |
 
 ---
 
-## SmartLoad Setup
-
-| Parameter | Value |
-|-----------|-------|
+## Table 6: Smart Load Setup
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | SmartLoad Setup | Generator Input |
 | On Grid Side | Disable |
 | On Load Side | Disable |
@@ -91,13 +83,13 @@
 
 ---
 
-## Basic Setting
-
-| Parameter | Value |
-|-----------|-------|
+## Table 7: Basic Settings
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | AM/PM | Disable |
 | Auto Dim | Enable |
-| System Time | 2026/06/18 16:27:15 |
+| System Time | 2026/07/12 04:59:02 |
 | Factory Reset | Disable |
 | Time Syncs | Enable |
 | BEEP | Enable |
@@ -105,27 +97,27 @@
 
 ---
 
-## Meter Settings
-
-| Parameter | Value |
-|-----------|-------|
+## Table 8: Meter Settings
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | EX_MeterCT | Disable |
 | Meter Select | No Meter |
 | Grid Tie Meter2 | Disable |
 
 ---
 
-## Advanced Function-1
-
-| Parameter | Value |
-|-----------|-------|
-| ARC Setup | OFF |
+## Table 9: Advanced Functions (Advanced Function-1)
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
+| ARC Setup | Enable |
 | Gen peak-shaving | Disable |
 | Gen peak-shaving power | 10000 W |
 | Grid peak-shaving | Disable |
 | Grid peak-shaving power | 8000 W |
 | Backup Delay | 0 ms |
-| parallel | Disable |
+| Parallel | Disable |
 | Phase | A Phase |
 | Auto Detect Home Limit Sensors | Please Select |
 | DRM | Disable |
@@ -143,23 +135,49 @@
 
 ---
 
-## Advanced Function-2
-
-| Parameter | Value |
-|-----------|-------|
+## Table 10: Advanced Functions (Advanced Function-2)
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | DC1 for WindTurbine | Disable |
 | DC2 for WindTurbine | Disable |
 | DC3 for WindTurbine | Disable |
 
 ---
 
-## EV_Charge_Mode
-
-| Parameter | Value |
-|-----------|-------|
+## Table 11: EV Charge Mode
+| **Parameter** | **Value** |
+|---|---|
+| Read Date/Time | 2026-07-12 04:59:13 UTC+07:00 |
 | Off Grid SOC | 95 % |
 | Charging Settings | Disable |
 | EV_charge Device Connect Set | Disable |
 | Max Charge Power | 3000 W |
+
+---
+
+## Table 12: Grid Settings
+| **Parameter** | **Value** |
+|---|---|
+| **Status** | **Locked** |
+| Access | Password required to unlock |
+
+---
+
+## Summary Table: Key System Values
+| **Category** | **Parameter** | **Value** |
+|---|---|---|
+| Battery | Capacity | 690 Ah |
+| Battery | Float Voltage | 54.1 V |
+| Battery | Absorption Voltage | 57.2 V |
+| Battery | Max Charge Current | 90 A |
+| Battery | Max Discharge Current | 150 A |
+| Battery | Shutdown Voltage | 47.8 V |
+| System | Max Solar Power | 10000 W |
+| System | Max Sell Power | 500 W |
+| System | Work Mode | Zero Export to CT |
+| Time of Use | All Time Slots | 10000 W / 48.2 V |
+| EV | Max Charge Power | 3000 W |
+| EV | Off Grid SOC | 95 % |
 
 ---
